@@ -1,0 +1,24 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    background-color: black;
+    width: 300px;
+}
+
+
+.text {
+    display: inline;
+    color: white;
+}
+
+.number {
+    display: inline;
+    color: lightblue;
+    letter-spacing: 3px;
+    margin-left: 10px;
+}
+
+.content {
+    color: white;
+}
