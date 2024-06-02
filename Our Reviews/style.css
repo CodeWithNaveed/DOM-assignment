@@ -71,6 +71,6 @@ button {
 #buttons {
     text-align: center; 
     position: fixed;
-    bottom: 25px;
+    bottom: 10px;
     width: 80%;
 }
