@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color : #e6e3e3;
+}
+
+/* ----------------------------------------------------------------Image---(start)-------------------------------------------------------- */
+#img-container {
+    text-align: center;
+}
+
+#img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* ------------------------------------------------------Name,designatio,text----(start)----------------------------------------------- */
+#name {
+    color: red;
+    text-align: center;
+}
+
+#designation {
+    text-align: center;
+    font-weight: bold;
+}
+
+#text {
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------Container----(start)--------------------------------------------------- */
+#container {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+#mainContainer {
+    border: 5px solid;
+    border-image: linear-gradient(to right, #00e5ff, #ffe600,#00e5ff) 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -----------------------------------------------------------------Button---(start)------------------------------------------------------- */
+.next {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+button {
+    border-radius: 50%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+#buttons {
+    text-align: center; 
+    position: fixed;
+    bottom: 25px;
+    width: 80%;
+}
