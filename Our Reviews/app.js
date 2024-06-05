@@ -39,10 +39,24 @@ const previousHandler = () => {
         document.querySelector("#designation").innerHTML = reviews[reviewsCounter].designation
         document.querySelector("#text").innerHTML = reviews[reviewsCounter].text
     }
+    else if (reviewsCounter == 0){
+        reviewsCounter = reviews.length-1
+        document.querySelector("#img").src = reviews[reviewsCounter].imgUrl
+        document.querySelector("#name").innerHTML = reviews[reviewsCounter].name
+        document.querySelector("#designation").innerHTML = reviews[reviewsCounter].designation
+        document.querySelector("#text").innerHTML = reviews[reviewsCounter].text
+    }
 }
 const nextHandler = () =>{
     if(reviewsCounter < reviews.length-1){
         reviewsCounter++
+        document.querySelector("#img").src = reviews[reviewsCounter].imgUrl
+        document.querySelector("#name").innerHTML = reviews[reviewsCounter].name
+        document.querySelector("#designation").innerHTML = reviews[reviewsCounter].designation
+        document.querySelector("#text").innerHTML = reviews[reviewsCounter].text
+    }
+    else if (reviewsCounter == reviews.length-1){
+        reviewsCounter = 0
         document.querySelector("#img").src = reviews[reviewsCounter].imgUrl
         document.querySelector("#name").innerHTML = reviews[reviewsCounter].name
         document.querySelector("#designation").innerHTML = reviews[reviewsCounter].designation
