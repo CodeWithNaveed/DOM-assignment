@@ -5,8 +5,11 @@ function screenDisplay(screen) {
 }
 
 function equal() {
-    var result = display
-    result.value = eval (result.value)
+    if(display.value !== ""){
+        display.value = eval(display.value);
+    } else {
+        display.value = "";
+    }
 }
 
 function clearScreen() {
