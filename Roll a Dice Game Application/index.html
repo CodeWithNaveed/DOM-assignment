@@ -11,32 +11,30 @@
    <h1 id="heading">Roll a Dice Game</h1>
 
    <div id="match-box">
-        <div id="player-1-container">
-            <h2 class="player-name">PLAYER 1</h2>
-            <div class="turn"></div>
-            <div id="main-score-container-1">
-                <div id="current-1">CURRENT</div>
-                <div id="score-1">0</div>
+                                                <!-- -------player-1-container------- -->
+        <div  class="player-0-container">
+            <h2 class="player-name" id="player-0"></h2>
+            <div class="score_number" id="score-0"></div>
+            <div class="current-score-container">
+                <div class="current-label">CURRENT</div>
+                <div class="current-score" id="current-score-0"></div>
             </div>
         </div>
-
-
-
-        <div id="player-2-container">            
-            <h2 class="player-name">PLAYER 2</h2>
-            <div class="turn"></div>
-            <div id="main-score-container-2">
-                <div id="current-2">CURRENT</div>
-                <div id="score-2">0</div>
+                                                <!-- -------player-2-container------- -->
+        <div  class="player-1-container"> 
+            <h2 class="player-name" id="player-1"></h2>
+            <div class="score_number" id="score-1"></div>
+            <div class="current-score-container">
+                <div class="current-label">CURRENT</div>
+                <div class="current-score" id="current-score-1"></div>
             </div>
         </div>
-
-
-
+                                                <!-- -------buttons------- -->      
         <div id="buttons">
-            <button class="btn"><i class="fa-solid fa-gamepad"></i>New Game</button>
-            <button class="btn" onclick="rollDiceNumber()"><i class="fa-solid fa-dice"></i>Roll Dice</button>
-            <button class="btn"><i class="fa-solid fa-compress"></i>Hold</button>
+            <button id="new-game-btn" class="btn"><i class="fa-solid fa-gamepad"></i>New Game</button>
+            <img src="images/dice-1.png" class="image_dice" alt="dice-number-image">
+            <button id="roll-dice-btn" class="btn"><i class="fa-solid fa-dice"></i>Roll Dice</button>
+            <button id="hold-dice-btn" class="btn"><i class="fa-solid fa-compress"></i>Hold</button>
         </div>
     </div>
 
