@@ -5,11 +5,10 @@
 }
 
 body {
-    background-color: #c2fcddf4;
-}
-
-.maim-container {
-    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -29,11 +28,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-h1 {
-    text-align: center;
-    font-size: 30px;
-}
-
 span {
     font-size: 30px;
     width:30%;
@@ -46,5 +40,14 @@ button {
     color: #2323f3a7;
     background-color:transparent;
     border: none;
+    font-size: 20px;
+    font-weight: 500;
 }
 
+button:hover {
+    text-decoration: underline;
+}
+
+button:active {
+    color: red
+}
