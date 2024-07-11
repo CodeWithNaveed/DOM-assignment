@@ -121,14 +121,16 @@ function player2() {
         },1000)
     }
     if(event.keyCode === 32){
-        character2.src = "./Asura/asra-roj.gif"
-        character2.style.width = "400px"
-        character2.style.height = "450px"
+        setInterval(function(){
+            character2.src = "./Asura/asra-roj.gif"
+            character2.style.width = "400px"
+            character2.style.height = "450px"
+        },)
         setTimeout(function(){
             character2.src = "./Asura/azrabc.gif"
             character2.style.width = "200px"
             character2.style.height = "250px"
-        },1500)
+        },5000)
     }
     if(event.keyCode === 13){
         window.onkeydown = player1;
