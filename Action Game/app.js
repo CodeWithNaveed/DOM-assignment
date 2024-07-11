@@ -1,7 +1,3 @@
-
-// let music = new Audio("music.mp3")
-// music.play()
-
 let move1 = 0;
 let move2 = 0;
 
@@ -100,8 +96,8 @@ function player2() {
     }
     if(event.keyCode === 38){
         character2.src = "./Asura/asra-jump.gif"
-        character2.style.width = "300px"
-        character2.style.height = "350px"
+        character2.style.width = "400px"
+        character2.style.height = "450px"
         setTimeout(function(){
             character2.src = "./Asura/azrabc.gif"
             character2.style.width = "200px"
@@ -121,11 +117,9 @@ function player2() {
         },1000)
     }
     if(event.keyCode === 32){
-        setInterval(function(){
-            character2.src = "./Asura/asra-roj.gif"
-            character2.style.width = "400px"
-            character2.style.height = "450px"
-        },)
+        character2.src = "./Asura/asra-roj.gif"
+        character2.style.width = "400px"
+        character2.style.height = "450px"
         setTimeout(function(){
             character2.src = "./Asura/azrabc.gif"
             character2.style.width = "200px"
