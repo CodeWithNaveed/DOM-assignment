@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Bud Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <h1>Grocery Bud</h1>
+        <div class="container">
+            <div id="input_area">
+                <input type="text" placeholder="Enter item" id="input">
+                <div>
+                    <button id="submit" onclick="addTask()">+ item</button>
+                    <button onclick="deleteAll()">delete all</button>
+                </div>
+            </div>
+            <ul id="ul"></ul>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
