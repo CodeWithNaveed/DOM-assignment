@@ -6,11 +6,11 @@
     <title>DOM assignment</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             background-image: url("./wp3077558.png");
-            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-attachment: fixed; */
             backdrop-filter: blur(10px);
-            background-size: 100vw 100vh;
         }
         
         h1 {
@@ -24,40 +24,89 @@
         .link-container {
             display: grid;
             grid-template-columns: repeat(10, 1fr);
-            width: 50vw;
             height: 83vh;
         }
 
         a {
             text-align: center;
             box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.3);
-            width: fit-content;
+            width: 150%;
             height: fit-content;
-            padding: 10px 20px;
+            padding: 5px 5px;
             text-decoration: none;
             color: rgb(0, 0, 255);
+            font-family: Arial, sans-serif;
             font-weight: bolder;
             border-radius: 20px;
             border: 5px solid rgb(226, 205, 46);
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.984);
         }
+
+        @media (max-width:600px) {
+            body {
+                background-image: url("./wp3077558.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                backdrop-filter: blur(10px);
+            }
+
+            .link-container {
+                grid-template-columns: repeat(2, 1fr);
+                height: 100vh;
+            }
+
+            a {
+                width: 185%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (min-width:601px) and (max-width:1000px) {
+            body {
+                background-image: url("./wp3077558.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                backdrop-filter: blur(10px);
+            }
+
+            .link-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            a {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
     </style>
 </head>
 <body>
     <h1>DOM-Assignment</h1>
     <div class="link-container">
-        <a href="./backgroundcolor/index.html" target="_blank">Assignment-1 (color changer)</a><br/>
-        <a href="./counter/index.html" target="_blank">Assignment-2 (Counter)</a><br/>
-        <a href="./Our Reviews/index.html" target="_blank">Assignment-3 (Our Reviews)</a><br/>
-        <a href="./see more/index.html" target="_blank">Assignment-4 (see more)</a><br/>
-        <a href="./calculator/index.html" target="_blank">Assignment-5 (calculator)</a><br/>
-        <a href="./tic tac toe/index.html" target="_blank">Assignment-6 (tic tac toe)</a><br/>
-        <a href="./Roll a Dice Game Application/index.html" target="_blank">Assignment-7 (Roll a Dice Game Application)</a><br/>
-        <a href="./frequently ask question/index.html" target="_blank">Assignment-8 (frequently ask question)</a><br/>
-        <a href="./Action Game/index.html" target="_blank">Assignment-9 (Action Game)</a><br/>
-        <a href="./Responsive Navbar/index.html" target="_blank">Assignment-10 (Responsive Navbar)</a><br/>
-        <a href="./Grocery Bud Todo/index.html" target="_blank">Assignment-11 (Grocery Bud Todo)</a><br/>
-        <a href="./Guess My Number/index.html" target="_blank">Assignment-12 (Guess My Number)</a><br/>
+        <a href="./backgroundcolor/index.html" target="_blank">Assignment-1<br>(color changer)</a><br/>
+        <a href="./counter/index.html" target="_blank">Assignment-2<br>(Counter)</a><br/>
+        <a href="./Our Reviews/index.html" target="_blank">Assignment-3<br>(Our Reviews)</a><br/>
+        <a href="./see more/index.html" target="_blank">Assignment-4<br>(see more)</a><br/>
+        <a href="./calculator/index.html" target="_blank">Assignment-5<br>(calculator)</a><br/>
+        <a href="./tic tac toe/index.html" target="_blank">Assignment-6<br>(tic tac toe)</a><br/>
+        <a href="./Roll a Dice Game Application/index.html" target="_blank">Assignment-7<br>(Roll a Dice Game Application)</a><br/>
+        <a href="./frequently ask question/index.html" target="_blank">Assignment-8<br>(frequently ask question)</a><br/>
+        <a href="./Action Game/index.html" target="_blank">Assignment-9<br>(Action Game)</a><br/>
+        <a href="./Responsive Navbar/index.html" target="_blank">Assignment-10<br>(Responsive Navbar)</a><br/>
+        <a href="./Grocery Bud Todo/index.html" target="_blank">Assignment-11<br>(Grocery Bud Todo)</a><br/>
+        <a href="./Guess My Number/index.html" target="_blank">Assignment-12<br>(Guess My Number)</a><br/>
+        <a href="./Modal project/index.html" target="_blank">Assignment-13<br>(Modal project)</a><br/>
     </div>
 </body>
 </html>
