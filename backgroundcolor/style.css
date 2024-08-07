@@ -1,15 +1,19 @@
 .heading {
-    display: flex;
-    justify-content: center;
-    margin-top: 300px;
-    background-color: black;
     width: 300px;
+    cursor: pointer;
+    padding: 30px;
+    background-color: rgb(158, 154, 154);
+    transform: translateX(500px) translateY(300px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
+.heading:active {
+    background-color: rgb(255, 255, 255);
+}
 
 .text {
     display: inline;
-    color: white;
+    color: rgb(6, 6, 6);
 }
 
 .number {
@@ -17,8 +21,4 @@
     color: lightblue;
     letter-spacing: 3px;
     margin-left: 10px;
-}
-
-.content {
-    color: white;
 }
